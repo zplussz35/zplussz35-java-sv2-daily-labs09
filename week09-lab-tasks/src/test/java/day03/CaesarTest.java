@@ -10,5 +10,8 @@ class CaesarTest {
     void testEncrypts() {
         Caesar caesar = new Caesar(3);
         assertEquals("def",caesar.encrypts("abc"));
+        assertEquals("def def",caesar.encrypts("ABC ABC"));
+
+
     }
 }
